@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Counter</title>
+</head>
+<body>
+  <h1 id="counter">0</h1>
+
+  <script>
+    // Initial counter value
+    let count = 0;
+
+    // Function to update the counter and display it
+    function updateCounter() {
+      count++;
+      document.getElementById('counter').textContent = count;
+    }
+
+    // Set interval to update the counter every 1000 milliseconds (1 second)
+    setInterval(updateCounter, 1000);
+  </script>
+</body>
+</html>
